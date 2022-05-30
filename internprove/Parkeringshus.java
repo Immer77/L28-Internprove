@@ -84,7 +84,8 @@ public class Parkeringshus {
         ArrayList<String> optagetPladser = new ArrayList<>();
         for(Parkeringsplads p : parkeringspladser){
             if(p.getBil() != null){
-                optagetPladser.add(p.getBil().getRegNr());
+                String s = "RegNr. " + p.getBil().getRegNr() + " Mærke " + p.getBil().getBilmærke();
+                optagetPladser.add(s);
             }
         }
         return optagetPladser;

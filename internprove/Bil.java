@@ -19,4 +19,8 @@ public class Bil {
     public void setBilmærke(Bilmærke bilmærke) {
         this.bilmærke = bilmærke;
     }
+    @Override
+    public String toString(){
+        return regNr + " " + bilmærke;
+    }
 }

@@ -1,11 +1,17 @@
 package internprove;
 
+import controller.Controller;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.nio.file.FileAlreadyExistsException;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class App {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
         Bil bil = new Bil("1512");
         Bil bil1 = new Bil("1515");
         Parkeringshus parkeringshus = new Parkeringshus("Sønderhøj");
@@ -32,5 +38,6 @@ public class App {
         System.out.println(parkeringshus.getSaldo());
         System.out.println(parkeringshus.optagnePladser());
 
+        Controller.init();
     }
 }

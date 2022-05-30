@@ -1,0 +1,3 @@
+RegNr. AB 11 222 Mærke FERRARI
+RegNr. EF 33 444 Mærke HYUNDAI
+RegNr. BD 55 666 Mærke MASERATI
